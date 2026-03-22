@@ -1,0 +1,36 @@
+.cat-breed-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2 em;
+}
+.cat-breed-card {
+  flex:1 1 300px ;
+  margin: 1 em;
+
+  padding: 1 em;
+  border: 1 px solid #ddd;
+  border-radius: 8 px;
+  box-shadow: 0 4 px 8 px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.cat-breed-card img {
+  width: 100%;
+  height: auto;
+    border-radius: 4 px;
+
+}
+.cat-breed-card:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  .cat-breed-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .cat-breed-container {
+    flex-direction: column;
+        align-items: center;
+  }
+}
